@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/site.js"></script>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="main-content">
+      <p>Hello.</p>
+      <p>My name is
+        <span id="1-1" class="on toggle"><a data-opens="1-2" data-closes="1-1">Istvan</a>.</span>
+        <span id="1-2" class="off toggle"><a data-opens="1-3" data-removelink>Istvan Fodor</a>.</span>
+        <span id="1-3" class="off toggle">I am a <a data-opens="1-4" data-removelink>software engineer</a>.</span><span id="1-4" class="off toggle"> I am a <a data-opens="1-5" data-removelink>husband</a><span id="1-5" class="off toggle"> and a <a data-opens="1-6" data-removelink>dad</a></span><span id="1-6" class="off toggle"> and I also play hockey sometimes</span>.</span>
+      </p>
+
+      <p>You can read
+        <span id="2-1" class="on toggle">more about me <a data-opens="2-2" data-closes="2-1">here.</a></span>
+        <span id="2-2" class="off toggle">more about my <a data-toggle="modal" data-target="#academics-modal">academic</a> and <a data-opens="3-1" data-removelink>professional</a> background.</span>
+      </p>
+      <p><span id="3-1" class="off toggle">I started programming at the age <a data-opens="3-2" data-removelink>15</a>. </span><span id="3-2" class="off toggle">Pascal was the only programming language I had heard about at that point, so I started <a data-opens="3-3" data-removelink>there</a>.</span>
+        <span id="3-3" class="off toggle"> After high-school I <a>studied</a> Computer Science at the University of Debrecen.</span>
+      </p>
+    </div>
+
+
+    <div id="academics-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+          <p>University of Chicago Booth School of Business, MBA - 2016</p>
+          <p>University of Debrecen, Comp Sci, MSc - 2010</p>
+          <p>University of Debrecen, Comp Sci, BSc - 2007</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div id="professional-modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"></h4>
+      </div>
+      <div class="modal-body">
+        <p>Houghton Mifflin Harcourt - 2016, May</p>
+        <p>Health Care Services Corporation - 2014, Feb - 2016, Mar</p>
+        <p>IntercontinentalExchange - 2011, Oct - 2014, Feb</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+  </body>
+</html>
